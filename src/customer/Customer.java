@@ -9,34 +9,13 @@ public class Customer {
     private String name;
     private String fathername;
     private String adress;
-    private long credit_num;
+    private long creditNum;
     private double balance;
 
 
 
     public Customer(int id){
-        Scanner console = new Scanner(System.in);
-
         this.id = id;
-
-        System.out.print("Input 'Surname':");
-        this.surname = console.nextLine();
-
-        System.out.print("Input 'Name':");
-        this.name = console.nextLine();
-
-        System.out.print("Input 'FatherName':");
-        this.fathername = console.nextLine();
-
-        System.out.print("Input 'Adress':");
-        this.adress = console.nextLine();
-
-        System.out.print("Input 'Credit Card':");
-        this.credit_num = console.nextLong();
-
-        System.out.print("Input 'Balance':");
-        this.balance = console.nextDouble();
-        console.nextLine();
     }
 
 
@@ -70,11 +49,11 @@ public class Customer {
     public void setAdress(String adress) {
         this.adress = adress;
     }
-    public long getCredit_num() {
-        return credit_num;
+    public long getCreditNum() {
+        return creditNum;
     }
-    public void setCredit_num(long credit_num) {
-        this.credit_num = credit_num;
+    public void setCreditNum(long creditNum) {
+        this.creditNum = creditNum;
     }
     public double getBalance() {
         return balance;
@@ -90,7 +69,7 @@ public class Customer {
                 + " Surname: " + surname
                 + " Fathername: " + fathername
                 + " Adress: " + adress
-                + " Credit Num: " + credit_num
+                + " Credit Num: " + creditNum
                 + " Balance: " + balance
                 + '}';
     }
